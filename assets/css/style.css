@@ -15,11 +15,13 @@ body{
          NAVBAR
 ***********************+*/
 
-.navbar{
+.navbar,
+main{
     display: flex;
-    width: 85%;
+    width: 80%;
     margin: auto;
 }
+
 
 /*************************
          BUTTON
@@ -35,7 +37,43 @@ button:hover{
     background-color: lightgray;
 }
 
+
+/*************************
+         GRID
+***********************+*/
+
+
+#grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center ;
+}
+
+
 /*************************
          SQUARE
 ***********************+*/
 
+.sq10,
+.sq9,
+.sq7
+{
+    border: 1px solid black;
+}
+
+.sq10{
+    width: calc( 100% / 10 );
+    aspect-ratio: 1;
+}
+
+.sq9{
+    width: calc( 100% / 9 );
+    aspect-ratio: 1;
+}
+
+.sq7{
+    width: calc( 100% / 7 );
+    aspect-ratio: 1;
+}
