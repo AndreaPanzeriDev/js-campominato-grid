@@ -28,7 +28,7 @@ function createTable(n_square, style){
         //function that create a single square
         console.log(style);
         let instant_square =singleSquare(style);
-        
+        //select item
         instant_square.addEventListener("click", function(){
             console.log(this);
             this.classList.toggle('active');
