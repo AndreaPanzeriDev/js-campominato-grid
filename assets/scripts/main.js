@@ -1,5 +1,7 @@
 
 function Play(){
+    let table = document.getElementById("grid");
+    table.innerHTML = '';
     //take the option from 
     let option = document.getElementById("selection").value;
     console.log(option);
@@ -20,7 +22,7 @@ function Play(){
 
 function createTable(n_square, style){
     //make a node/connection with the grid
-    let table = document.getElementById("grid");
+    const table = document.getElementById("grid");
     //creation square by square
     for(let i = 0; i<n_square; i++){
         //function that create a single square
