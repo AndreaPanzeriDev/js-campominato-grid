@@ -24,10 +24,10 @@ function createTable(n_square, style){
     //make a node/connection with the grid
     const table = document.getElementById("grid");
     //creation square by square
-    for(let i = 0; i<n_square; i++){
+    for(let i = 1; i<=n_square; i++){
         //function that create a single square
         console.log(style);
-        let instant_square =singleSquare(style);
+        let instant_square =singleSquare(style, i);
         //select item
         instant_square.addEventListener("click", function(){
             console.log(this);
@@ -39,8 +39,9 @@ function createTable(n_square, style){
 }
 
 
-function singleSquare(style){
+function singleSquare(style, count){
     const div = document.createElement('div');
     div.classList.add(style);
+    div.innerHTML = count;
     return div;
 }
