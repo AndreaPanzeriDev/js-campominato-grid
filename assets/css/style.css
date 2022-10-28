@@ -22,6 +22,9 @@ main{
     margin: auto;
 }
 
+.navbar{
+    height: 10vh;
+}
 
 /*************************
          BUTTON
@@ -42,6 +45,10 @@ button:hover{
          GRID
 ***********************+*/
 
+main{
+    height: calc(90vh);
+    width: calc(90vh)
+}
 
 #grid{
     display: flex;
@@ -65,15 +72,15 @@ button:hover{
 
 .sq10{
     width: calc( 100% / 10 );
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
 }
 
 .sq9{
     width: calc( 100% / 9 );
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
 }
 
 .sq7{
     width: calc( 100% / 7 );
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
 }
